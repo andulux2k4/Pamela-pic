@@ -1,2 +1,0 @@
-# Pamela-pic
-scrolling effect
