@@ -1,9 +1,7 @@
 const track = document.getElementById("image-track");
 console.log('echo');
-
 let isMouseDown = false;
 let mouseDownAt = 0;
-
 
 window.addEventListener("mousedown", e => {
   isMouseDown = true;
@@ -15,7 +13,6 @@ window.addEventListener("mouseup", () => {
   mouseDownAt = 0;
   track.dataset.prevPercentage = track.dataset.percentage;
 });
-
 
 let nextPercentage = 0;
 
@@ -38,8 +35,8 @@ window.addEventListener("mousemove", e => {
     track.animate({
       transform: `translate(${nextPercentage}%, -50%)`
     }, { duration: 1200, fill: "forwards" });
-
-    
   }
 }
 });
+
+console.log('echo');
