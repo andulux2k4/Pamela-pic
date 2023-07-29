@@ -1,0 +1,25 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    margin: 0rem;
+    overflow: hidden;
+}
+
+#image-track {
+    display: flex;
+    gap: 4vmin;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(0%, -50%);
+    user-select: none;
+}
+
+#image-track > .image {
+    width: 20vw; /* Adjust this value to control the width of the images */
+    height: calc(20vw * 16 / 9); /* Set the height based on the aspect ratio of the phone picture */
+    object-fit: cover;
+    object-position: 100% center;
+    background-position: -20% 0%; /* Adjust this value to control the parallax effect */
+  }
