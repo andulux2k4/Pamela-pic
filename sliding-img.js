@@ -1,4 +1,5 @@
 const track = document.getElementById("image-track");
+console.log('echo');
 
 let isMouseDown = false;
 let mouseDownAt = 0;
